@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="org.nodeclipse.jsquared.views.category"
+            class="org.nodeclipse.jsquared.views.BrowserDemoView"
+            icon="icons/web.gif"
+            id="org.nodeclipse.jsquared.views.BrowserDemoView"
+            name="JSquared Editor"
+            restorable="true">
+      </view>
+      <category
+            id="org.nodeclipse.jsquared.views.category"
+            name="JSquared Category">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.nodeclipse.jsquared.perspective.PerspectiveFactory"
+            icon="icons/web.gif"
+            id="org.nodeclipse.jsquared.perspective"
+            name="JSquared Editor">
+      </perspective>
+   </extension>
+
+</plugin>
